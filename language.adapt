@@ -1,0 +1,22 @@
+native function comments
+  (ARGS) => {
+    return;
+  }
+constructor comments ({i!$1},{[["1","comment"]]},{[]})
+
+i! This is the language
+
+
+native function string
+  (ARGS) => {
+    return String(ARGS.txt)
+  }
+constructor string ({"$1"},{[["1","txt"]]},{[]})
+
+
+constructor string ({'$1'},{[["1","txt"]]},{[]})
+native function print
+  (ARGS) => {
+    console.log(ARGS.txt);
+  }
+constructor print ({write.$1},{[["1","txt"]]},{["txt"]})
