@@ -20,3 +20,19 @@ native function print
     console.log(ARGS.txt);
   }
 constructor print ({write.$1},{[["1","txt"]]},{["txt"]})
+
+
+
+native function write
+  (ARGS) => {
+    return String(ARGS.txt)
+  }
+constructor string ({"$1"},{[["1","txt"]]},{[]})
+
+
+constructor string ({'$1'},{[["1","txt"]]},{[]})
+native function write
+  (ARGS) => {
+    document.write(ARGS.txt);
+  }
+constructor write ({print.$1},{[["1","txt"]]},{["txt"]})

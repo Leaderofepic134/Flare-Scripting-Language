@@ -297,19 +297,19 @@ let syntax = {
 };
 
 let fs = require('fs');
-/* Read Adapt language program */
-let program = fs.readFileSync('language.adapt').toString();
+/* Read Flare language program */
+let program = fs.readFileSync('language.flare').toString();
 let _l = compileLines(program,syntaxoptions);
 for(let line of _l) {
   readFunction(line);
 }
 
-/* Remove Adapt constructors to make this YOUR langauge */
+/* Remove Flare constructors to make this YOUR langauge */
 constructors.shift();
 constructors.shift();
 
 /* Read your program */
-program = fs.readFileSync('index.adapt').toString();
+program = fs.readFileSync('index.flare').toString();
 _l = compileLines(program,syntax);
 for(let line of _l) {
   readFunction(line);
