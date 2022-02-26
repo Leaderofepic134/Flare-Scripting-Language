@@ -22,6 +22,7 @@ native function print
 constructor print ({write.$1},{[["1","txt"]]},{["txt"]})
 
 
+i! Currently, this command is broken, do not use it in your code.
 
 native function write
   (ARGS) => {
