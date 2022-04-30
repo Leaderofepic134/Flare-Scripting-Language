@@ -298,7 +298,7 @@ let syntax = {
 
 let fs = require('fs');
 /* Read Flare language program */
-let program = fs.readFileSync('language.flare').toString();
+let program = fs.readFileSync('setup/language.flsetup').toString();
 let _l = compileLines(program,syntaxoptions);
 for(let line of _l) {
   readFunction(line);

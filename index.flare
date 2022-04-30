@@ -1,3 +1,5 @@
 write."Hello world!"
+#^ print one line of text
+
 write."This is a test program in the Flare Scripting language built on JS"
-print."Hello"
+write."Hello"

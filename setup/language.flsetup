@@ -2,9 +2,9 @@ native function comments
   (ARGS) => {
     return;
   }
-constructor comments ({i!$1},{[["1","comment"]]},{[]})
+constructor comments ({#^$1},{[["1","comment"]]},{[]})
 
-i! This is the language
+#^ This is the language
 
 
 native function string
@@ -22,7 +22,7 @@ native function print
 constructor print ({write.$1},{[["1","txt"]]},{["txt"]})
 
 
-i! Currently, this command is broken, do not use it in your code.
+#^ Currently, this command is broken, do not use it in your code.
 
 native function write
   (ARGS) => {
